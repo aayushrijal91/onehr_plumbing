@@ -68,6 +68,8 @@ header {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
+                line-height: 1;
 
                 @include media-breakpoint-down(sm) {
                     height: 105px;
@@ -197,6 +199,11 @@ section.services {
     }
 
     .service_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
         @include media-breakpoint-down(sm) {
             border-radius: 25px;
             background: $quarternary;
@@ -216,12 +223,8 @@ section.customers {
         color: $dark;
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         background: $primary;
-
-        .heading {
-            color: $white;
-        }
     }
 
     @include media-breakpoint-down(sm) {

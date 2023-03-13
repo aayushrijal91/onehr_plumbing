@@ -8,7 +8,7 @@
                             <?= renderImg("logo.png", "logo") ?>
                         </a>
                     </div>
-                    <div class="col-auto d-none d-md-block">
+                    <div class="col-auto d-none d-lg-block">
                         <div class="time_wrapper font-roboto fs-20 row justify-content-center text-primary">
                             <div class="col-auto"><span class="time">3:39:40pm</span></div>
                             <div class="col-auto">We're Open!</div>
@@ -54,7 +54,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-xl-7">
-                    <h1 class="heading fs-96 lh-1 fw-700 text-center py-3 py-md-4">
+                    <h1 class="heading fs-96 lh-1 fw-700 text-center py-lg-4">
                         <div id="bannerHeadingSlider">
                             <div class="text-primary my-2">Drains fixed</div>
                             <div class="text-orange my-2">Hot water fixed</div>
@@ -68,7 +68,7 @@
                     <div class="select_service_text text-center fs-24 font-roboto">Select your service to get started:</div>
                 </div>
                 <div class="col-12 py-6 d-md-none"><?= renderImg('plumbing-guy.png', 'lib') ?></div>
-                <div class="col-md-9 py-md-6">
+                <div class="col-lg-9 py-md-6">
                     <div class="choices row" id="service_choices">
                         <div class="col">
                             <div class="choice_card">
@@ -143,28 +143,34 @@
                 </div>
 
                 <div class="row gx-xxl-5 gy-4 gy-md-0">
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <div class="service_card">
-                            <?= renderImg('service_clock.png', 'icons') ?>
-                            <div class="text-dark fs-32 fw-700 pt-4 pb-2">All major blockages</div>
+                            <div>
+                                <?= renderImg('service_clock.png', 'icons') ?>
+                                <div class="text-dark fs-32 fw-700 pt-4 pb-2 lh-1">All major blockages</div>
+                            </div>
                             <div class="font-roboto fs-18 text-tertiary">
                                 Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat est velitolm.
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <div class="service_card">
-                            <?= renderImg('service_clock.png', 'icons') ?>
-                            <div class="text-dark fs-32 fw-700 pt-4 pb-2">Same day fix </div>
+                            <div>
+                                <?= renderImg('service_clock.png', 'icons') ?>
+                                <div class="text-dark fs-32 fw-700 pt-4 pb-2 lh-1">Same day fix </div>
+                            </div>
                             <div class="font-roboto fs-18 text-tertiary">
                                 Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat est velitolm.
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <div class="service_card">
-                            <?= renderImg('service_clock.png', 'icons') ?>
-                            <div class="text-dark fs-32 fw-700 pt-4 pb-2">Effective drain cleaning</div>
+                            <div>
+                                <?= renderImg('service_clock.png', 'icons') ?>
+                                <div class="text-dark fs-32 fw-700 pt-4 pb-2 lh-1">Effective drain cleaning</div>
+                            </div>
                             <div class="font-roboto fs-18 text-tertiary">
                                 Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat est velitolm.
                             </div>
@@ -187,7 +193,7 @@
     </div>
 </section>
 
-<section class="customers pt-md-5 position-relative mt-xxl-5 overflow-hidden">
+<section class="customers pt-md-5 position-relative mt-md-5 overflow-hidden">
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-xxl-9">
