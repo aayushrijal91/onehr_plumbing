@@ -10,6 +10,16 @@ document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
     });
 });
 
+$('#bannerHeadingSlider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1000
+});
+
 $('.slidert').slick({
     dots: false,
     infinite: true,

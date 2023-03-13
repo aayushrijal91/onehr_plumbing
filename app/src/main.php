@@ -57,7 +57,13 @@
                 <div class="col-auto d-md-none"><?= renderImg('pr-sm.png', 'lib') ?></div>
                 <div class="col-xl-7">
                     <h1 class="heading fs-96 lh-1 fw-700 text-center py-3 py-md-4">
-                        <div class="text-primary">Drains fixed</div> with 1 Hour Plumbing
+                        <div id="bannerHeadingSlider">
+                            <div class="text-primary my-2">Drains fixed</div>
+                            <div class="text-orange my-2">Hot water fixed</div>
+                            <div class="text-pink my-2">Gas fixed</div>
+                            <div class="text-light-blue my-2">General plumbing</div>
+                        </div>
+                        <div>with 1 Hour Plumbing</div>
                     </h1>
                 </div>
                 <div class="col-12">
@@ -124,7 +130,7 @@
         </div>
     </div>
 </section>
-
+<div class="text-center pb-5"><?= renderImg('animated-arrow.png', 'icons') ?></div>
 <section class="services">
     <div class="container">
         <div class="row justify-content-center">
@@ -395,13 +401,14 @@
             <div class="row justify-content-center py-4">
                 <div class="col-xl-10 text-center heading fs-72 fw-700 lh-1">We'll be there in 1 hour or we pay you $100*</div>
             </div>
-            <div class="row justify-content-center py-4 d-none d-md-flex">
-                <div class="col-auto">
-                    <a href="tel:<?= $phone_number ?>" class="btn btn-dark text-white rounded-3 fs-30 fw-600 px-4">Call <?= $phone_number ?></a>
-                </div>
-                <div class="col-auto">
-                    <a href="#form" class="btn btn-white text-primary rounded-0 fs-30 fw-600 px-5">Book Online</a>
-                </div>
+            <div class="text-center py-4 d-none d-md-block">
+                <a href="tel:<?= $phone_number ?>" class="btn btn-dark text-white rounded-0 px-4 px-xl-5 gap-3 d-inline-flex">
+                    <div><?= renderImg('phone_btn.png', 'icons', 'h-100') ?></div>
+                    <div>
+                        <div class="fs-24 fw-600"><?= $phone_number ?></div>
+                        <div class="text-start fs-18 font-roboto">Available 24/7</div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="accreditation">
@@ -454,7 +461,7 @@
                 </div>
             </div>
             <div class="row justify-content-center justify-content-md-between align-items-center pt-5 pt-xl-4 gy-3 gy-md-0">
-                <div class="col-auto font-roboto text-primary-light copyright">
+                <div class="col-auto font-roboto text-light-blue copyright">
                     <span>Copyright <?= date('Y') ?></span>
                     <span class="text-secondary px-2 px-xl-5">/</span>
                     <span><?= $site ?></span>
