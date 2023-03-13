@@ -112,7 +112,7 @@
                         </div>
                         <div class="col">
                             <div class="choice_card">
-                                <div><?= renderImg('other.png', 'icons') ?></div>
+                                <div><?= renderImg('others.png', 'icons') ?></div>
                                 <div class="title">Other</div>
                                 <div class="input">
                                     <input type="radio" class="serviceSelector" value="other" id="test5" name="serviceSelector">
