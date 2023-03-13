@@ -488,3 +488,14 @@
         </div>
     </footer>
 </div>
+
+<div class="sticky-button text-center d-md-none">
+    <a href="tel:<?= $phone_number ?>" class="btn btn-primary rounded-0 text-white py-3 px-4 gap-3">
+        <div>
+            <div class="fs-20 fw-600 lh-0_8">24/7</div>
+            <div class="fs-12 fw-600 lh-0_8">service</div>
+        </div>
+        <div class="animated-call-button"><?= renderImg('call-button.png', 'icons') ?></div>
+        <div class="fs-27 fw-600"><?= $phone_number ?></div>
+    </a>
+</div>

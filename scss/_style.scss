@@ -388,10 +388,11 @@ footer {
     border-radius: 25px;
     background-color: $primary;
     color: $white;
-    margin-bottom: 57px;
+    margin-bottom: 80px;
 
     @include media-breakpoint-up(md) {
         border-radius: 46px;
+        margin-bottom: 64px;
     }
 
     @include media-breakpoint-down(sm) {
