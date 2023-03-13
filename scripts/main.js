@@ -55,6 +55,12 @@ $('.slidert').slick({
 });
 
 if ($(document).width() <= 540) {
+    $("#service_choices").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+    });
+
     $("#license_slider").slick({
         slidesToShow: 4,
         slidesToScroll: 1,

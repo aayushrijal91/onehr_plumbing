@@ -3,6 +3,8 @@ $primary-light: #042EE2;
 $primary-dark: #003177;
 $secondary: #FFF200;
 $tertiary: #818493;
+$quarternary: #F6F8FF;
+$quinary: #91A3D3;
 $orange: #F69E56;
 $pink: #FF7882;
 $light-blue: #72A2DD;
@@ -22,6 +24,8 @@ $theme-colors: map-merge(("primary": $primary,
             "primary-dark": $primary-dark,
             "secondary": $secondary,
             "tertiary": $tertiary,
+            "quarternary": $quarternary,
+            "quinary": $quinary,
             "dark-grey": $dark-grey,
             "black": $black,
             "white": $white,
