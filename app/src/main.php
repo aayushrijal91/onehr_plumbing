@@ -21,7 +21,7 @@
             </div>
             <div class="col-auto fs-20 font-roboto text-grey d-none d-xl-block">We'll be there in 1 hour or we pay you $100*</div>
             <div class="col-auto d-none d-md-block">
-                <a href="tel:<?= $phone_number ?>" class="btn btn-primary rounded-0 text-white py-3 px-4 gap-1">
+                <a href="tel:<?= $phone_number ?>" class="btn btn-primary rounded-0 text-white py-3 px-4 gap-3">
                     <div>
                         <div class="fs-20 fw-600 lh-0_8">24/7</div>
                         <div class="fs-12 fw-600 lh-0_8">service</div>
@@ -70,7 +70,7 @@
                                 <div><?= renderImg('drains.png', 'icons') ?></div>
                                 <div class="title">Drains</div>
                                 <div class="input">
-                                    <input type="radio" id="test1" name="radio-group" checked>
+                                    <input type="radio" class="serviceSelector" value="drains" id="test1" name="serviceSelector" checked>
                                     <label for="test1"></label>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@
                                 <div><?= renderImg('hot-water.png', 'icons') ?></div>
                                 <div class="title">Hot Water</div>
                                 <div class="input">
-                                    <input type="radio" id="test2" name="radio-group">
+                                    <input type="radio" class="serviceSelector" value="hot_water" id="test2" name="serviceSelector">
                                     <label for="test2"></label>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@
                                 <div><?= renderImg('gas.png', 'icons') ?></div>
                                 <div class="title">Gas</div>
                                 <div class="input">
-                                    <input type="radio" id="test3" name="radio-group">
+                                    <input type="radio" class="serviceSelector" value="gas" id="test3" name="serviceSelector">
                                     <label for="test3"></label>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@
                                 <div><?= renderImg('general-plumbing.png', 'icons') ?></div>
                                 <div class="title">General Plumbing</div>
                                 <div class="input">
-                                    <input type="radio" id="test4" name="radio-group">
+                                    <input type="radio" class="serviceSelector" value="general_plumbing" id="test4" name="serviceSelector">
                                     <label for="test4"></label>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@
                                 <div><?= renderImg('other.png', 'icons') ?></div>
                                 <div class="title">Other</div>
                                 <div class="input">
-                                    <input type="radio" id="test5" name="radio-group">
+                                    <input type="radio" class="serviceSelector" value="other" id="test5" name="serviceSelector">
                                     <label for="test5"></label>
                                 </div>
                             </div>
@@ -127,6 +127,56 @@
 
 <section class="services">
     <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-9">
+                <div class="text-center fs-20 text-uppercase text-primary font-dmsans fw-700 lh-1">Melbourne wide local and reliable plumbing services</div>
+                <div id="service_title" class="text-center fw-700 text-dark-grey fs-64">Issues with your drains?</div>
+                <div class="service_image" id="service_image">
+                    <?= renderImg('service_drains.jpg', 'lib') ?>
+                </div>
+
+                <div class="row gx-xxl-5">
+                    <div class="col-lg-4">
+                        <div class="service_card">
+                            <?= renderImg('service_clock.png', 'icons') ?>
+                            <div class="text-dark fs-32 fw-700 pt-4 pb-2">All major blockages</div>
+                            <div class="font-roboto fs-18 text-tertiary">
+                                Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat est velitolm.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service_card">
+                            <?= renderImg('service_clock.png', 'icons') ?>
+                            <div class="text-dark fs-32 fw-700 pt-4 pb-2">Same day fix </div>
+                            <div class="font-roboto fs-18 text-tertiary">
+                                Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat est velitolm.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service_card">
+                            <?= renderImg('service_clock.png', 'icons') ?>
+                            <div class="text-dark fs-32 fw-700 pt-4 pb-2">Effective drain cleaning</div>
+                            <div class="font-roboto fs-18 text-tertiary">
+                                Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat est velitolm.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center pt-7">
+                    <a href="tel:<?= $phone_number ?>" class="service-call-btn btn btn-primary rounded-0 text-white py-3 px-4 px-xl-5 gap-3 d-inline-flex">
+                        <div>
+                            <div class="fs-20 fw-600 lh-0_8">24/7</div>
+                            <div class="fs-12 fw-600 lh-0_8">service</div>
+                        </div>
+                        <div class="animated-call-button"><?= renderImg('call-button.png', 'icons') ?></div>
+                        <div class="fs-27 fw-600"><?= $phone_number ?></div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

@@ -77,6 +77,38 @@ function setTime() {
 
 setInterval(setTime, 1000);
 
+
+$('.serviceSelector').on('change', function () {
+    const serviceRadio = $('input[name="serviceSelector"]:checked').val()
+
+    switch (serviceRadio) {
+        case 'drains':
+            $('#service_title').html('Issues with your drains?');
+            $('#service_image img').attr('src', './assets/images/lib/service_drains.jpg');
+            break;
+
+        case 'hot_water':
+            $('#service_title').html('Issues with your hot water?');
+            $('#service_image img').attr('src', './assets/images/lib/service_hotwater.jpg');
+            break;
+
+        case 'gas':
+            $('#service_title').html('Issues with your gas?');
+            $('#service_image img').attr('src', './assets/images/lib/service_gas.jpg');
+            break;
+
+        case 'general_plumbing':
+            $('#service_title').html('Issues with your plumbing?');
+            $('#service_image img').attr('src', './assets/images/lib/service_plumbing.jpg');
+            break;
+
+        case 'other':
+            $('#service_title').html('We’ll asses your problem within an hour');
+            $('#service_image img').attr('src', './assets/images/lib/service_others.jpg');
+            break;
+    }
+});
+
 $(window).on('scroll', () => {
     if ($(this).scrollTop() >= 600) {
         $('#return-to-top').fadeIn(300);
