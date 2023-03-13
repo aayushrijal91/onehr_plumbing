@@ -53,7 +53,7 @@
                 <?= renderImg('clock.png', 'icons') ?>
             </div>
             <div class="row justify-content-center">
-                <div class="col-xl-7">
+                <div class="col-xxl-7">
                     <h1 class="heading fs-96 lh-1 fw-700 text-center py-lg-4">
                         <div id="bannerHeadingSlider">
                             <div class="text-primary my-2">Drains fixed</div>
@@ -68,7 +68,7 @@
                     <div class="select_service_text text-center fs-24 font-roboto">Select your service to get started:</div>
                 </div>
                 <div class="col-12 py-6 d-md-none"><?= renderImg('plumbing-guy.png', 'lib') ?></div>
-                <div class="col-lg-9 py-md-6">
+                <div class="col-lg-11 col-xl-10 col-xxl-9 py-md-6">
                     <div class="choices row" id="service_choices">
                         <div class="col">
                             <div class="choice_card">
@@ -133,7 +133,7 @@
 <section class="services">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-9">
+            <div class="col-xl-10 col-xxl-9">
                 <hr class="d-md-none" />
                 <div class="text-center fs-18 pt-4 pb-5 text-uppercase text-primary font-dmsans fw-700 lh-1 d-md-none">on time or we pay you $100*</div>
                 <div class="text-center fs-20 text-uppercase text-primary font-dmsans fw-700 lh-1 d-none d-md-block">Melbourne wide local and reliable plumbing services</div>
