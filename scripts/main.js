@@ -1,15 +1,3 @@
-// AOS.init({ duration: 1500 });
-
-document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 $('#bannerHeadingSlider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -94,8 +82,13 @@ function setTime() {
 setInterval(setTime, 1000);
 
 
-$('.serviceSelector').on('change', function () {
+$('.serviceSelector').on('change', function (e) {
+    e.preventDefault();
+
     const serviceRadio = $('input[name="serviceSelector"]:checked').val()
+    $('html, body').animate({
+        scrollTop: $('#services').offset().top
+    }, 500);
 
     switch (serviceRadio) {
         case 'drains':

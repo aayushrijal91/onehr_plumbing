@@ -130,7 +130,7 @@
     </section>
 </div>
 <div class="text-center pb-5 d-none d-md-block"><?= renderImg('animated-arrow.png', 'icons') ?></div>
-<section class="services">
+<section class="services" id="services">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-10 col-xxl-9">
