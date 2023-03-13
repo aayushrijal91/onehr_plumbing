@@ -145,34 +145,34 @@
                 <div class="row gx-xxl-5 gy-4 gy-md-0">
                     <div class="col-md-4">
                         <div class="service_card">
-                            <div>
+                            <div class="pb-lg-3">
                                 <?= renderImg('service_clock.png', 'icons') ?>
                                 <div class="text-dark fs-32 fw-700 pt-4 pb-2 lh-1">All major blockages</div>
                             </div>
                             <div class="font-roboto fs-18 text-tertiary">
-                                Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat est velitolm.
+                                Are you struggling with major blockages in your plumbing system? Do you need immediate assistance to fix the issue? Look no further! Our team of expert plumbers in Melbourne is here to help.
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service_card">
-                            <div>
+                            <div class="pb-lg-3">
                                 <?= renderImg('service_clock.png', 'icons') ?>
                                 <div class="text-dark fs-32 fw-700 pt-4 pb-2 lh-1">Same day fix </div>
                             </div>
                             <div class="font-roboto fs-18 text-tertiary">
-                                Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat est velitolm.
+                                When you need a fast and reliable plumbing service in Melbourne, you can count on us for a same-day fix. Our expert plumbers are available 24/7 to provide immediate assistance and ensure that your plumbing emergencies are resolved quickly and efficiently.
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service_card">
-                            <div>
+                            <div class="pb-lg-3">
                                 <?= renderImg('service_clock.png', 'icons') ?>
                                 <div class="text-dark fs-32 fw-700 pt-4 pb-2 lh-1">Effective drain cleaning</div>
                             </div>
                             <div class="font-roboto fs-18 text-tertiary">
-                                Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat est velitolm.
+                                Are you tired of dealing with clogged and slow-draining sinks and showers? Our expert plumbers in Melbourne offer effective drain cleaning services to help you get rid of stubborn clogs and keep your plumbing system running smoothly.
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@
                             </div>
                         </div>
                         <h3 class="text-dark fs-72 fw-700 lh-1 text-center d-lg-none">4500+ loved their<br> 1hr plumbing experience</h3>
-                        <div class="text-center d-lg-none pt-4 pb-5">
+                        <div class="text-center d-lg-none pt-4 pb-md-5">
                             <?= renderImg("cpr2.png", 'lib') ?>
 
                             <div class="row justify-content-center">
@@ -291,11 +291,6 @@
                     'heading' => 'Kitchen sink & water mains fixed quick. Thanks Blaine',
                     'content' => "After the first tradesman was not able to make it they sent out a second. He called to let us know what time he would be here and was spot on time. Blaine was very professional and quick having it all sorted in just over an hour. His attitude was great and I'd recommend him for anyone wanting the job done quickly and professionally.",
                 ],
-                [
-                    'name' => 'Randy',
-                    'heading' => 'Perfect plumbing job',
-                    'content' => 'Had a burst waterline called plumbfirst came on time explained the problem and what had to be done. Tristan did a perfect job was very polite under trying conditions thanks.',
-                ],
             ];
             $n = 0;
             foreach ($testi as $key => $value) {
@@ -364,7 +359,7 @@
                                 <div class="d-flex justify-content-between align-items-center w-100 py-4">
                                     <div class="px-3 px-md-4">
                                         <div class="fs-32 fw-700 text-uppercase lh-1">
-                                            <span class="text-primary">Easily</span> Save
+                                            <span class="text-pink">Easily</span> Save
                                         </div>
                                         <div class="fs-86 fw-700 lh-1 text-primary">$100</div>
                                         <div class="fs-32 fw-700 lh-1 pt-2">On All New<br> Water Heaters*</div>

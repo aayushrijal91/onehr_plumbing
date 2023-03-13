@@ -199,12 +199,11 @@ section.services {
     }
 
     .service_card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-
         @include media-breakpoint-down(sm) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
             border-radius: 25px;
             background: $quarternary;
             text-align: center;
@@ -323,6 +322,13 @@ section.testimonials {
     }
 
     .slick-slide {
+        @include media-breakpoint-down(sm) {
+            &.slick-current.slick-active {
+                margin-top: 93px;
+                transition: 0.2s all;
+            }
+        }
+
         .card-o {
             min-height: 480px;
 
