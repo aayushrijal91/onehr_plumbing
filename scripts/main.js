@@ -86,36 +86,42 @@ $('.serviceSelector').on('change', function (e) {
     e.preventDefault();
 
     const serviceRadio = $('input[name="serviceSelector"]:checked').val()
-    $('html, body').animate({
-        scrollTop: $('#services').offset().top
-    }, 500);
 
     switch (serviceRadio) {
         case 'drains':
-            $('#service_title').html('Issues with your drains?');
-            $('#service_image img').attr('src', './assets/images/lib/service_drains.jpg');
+            $('.service_tab').removeClass('active');
+            $('#tab_drains').addClass('active');
+
             break;
 
         case 'hot_water':
-            $('#service_title').html('Issues with your hot water?');
-            $('#service_image img').attr('src', './assets/images/lib/service_hotwater.jpg');
+            $('.service_tab').removeClass('active');
+            $('#tab_hotwater').addClass('active');
+            
             break;
 
         case 'gas':
-            $('#service_title').html('Issues with your gas?');
-            $('#service_image img').attr('src', './assets/images/lib/service_gas.jpg');
+            $('.service_tab').removeClass('active');
+            $('#tab_gas').addClass('active');
+            
             break;
 
         case 'general_plumbing':
-            $('#service_title').html('Issues with your plumbing?');
-            $('#service_image img').attr('src', './assets/images/lib/service_plumbing.jpg');
+            $('.service_tab').removeClass('active');
+            $('#tab_generalplumbing').addClass('active');
+            
             break;
 
         case 'other':
-            $('#service_title').html('We’ll asses your problem within an hour');
-            $('#service_image img').attr('src', './assets/images/lib/service_others.jpg');
+            $('.service_tab').removeClass('active');
+            $('#tab_otherservices').addClass('active');
+            
             break;
     }
+
+    $('html, body').animate({
+        scrollTop: $('#services').offset().top
+    }, 500);
 });
 
 $(window).on('scroll', () => {

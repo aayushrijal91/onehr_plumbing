@@ -177,23 +177,23 @@ section.services {
         background: imgUrl('service.png') left center;
     }
 
-    .service_image {
-        padding: 60px 0;
+    .service_tab {
+        display: none;
 
-        img {
-            width: 100%;
-            height: 301px;
-            overflow: hidden;
-            border-radius: 25px;
-            object-fit: cover;
-            object-position: center;
+        &.active {
+            display: block;
         }
 
-        @include media-breakpoint-down(sm) {
-            padding: 46px 0 16px;
+        .service_video {
+            display: flex;
+            justify-content: center;
+            margin: 60px 0;
+            border-radius: 25px;
+            overflow: hidden;
 
-            img {
+            .video_box {
                 height: 382px;
+                width: 100%;
             }
         }
     }

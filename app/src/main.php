@@ -75,8 +75,8 @@
                                 <div><?= renderImg('drains.png', 'icons') ?></div>
                                 <div class="title">Drains</div>
                                 <div class="input">
-                                    <input type="radio" class="serviceSelector" value="drains" id="test1" name="serviceSelector" checked>
-                                    <label for="test1"></label>
+                                    <input type="radio" class="serviceSelector" value="drains" id="service1" name="serviceSelector" checked>
+                                    <label for="service1"></label>
                                 </div>
                             </div>
                         </div>
@@ -85,8 +85,8 @@
                                 <div><?= renderImg('hot-water.png', 'icons') ?></div>
                                 <div class="title">Hot Water</div>
                                 <div class="input">
-                                    <input type="radio" class="serviceSelector" value="hot_water" id="test2" name="serviceSelector">
-                                    <label for="test2"></label>
+                                    <input type="radio" class="serviceSelector" value="hot_water" id="service2" name="serviceSelector">
+                                    <label for="service2"></label>
                                 </div>
                             </div>
                         </div>
@@ -95,8 +95,8 @@
                                 <div><?= renderImg('gas.png', 'icons') ?></div>
                                 <div class="title">Gas</div>
                                 <div class="input">
-                                    <input type="radio" class="serviceSelector" value="gas" id="test3" name="serviceSelector">
-                                    <label for="test3"></label>
+                                    <input type="radio" class="serviceSelector" value="gas" id="service3" name="serviceSelector">
+                                    <label for="service3"></label>
                                 </div>
                             </div>
                         </div>
@@ -105,8 +105,8 @@
                                 <div><?= renderImg('general-plumbing.png', 'icons') ?></div>
                                 <div class="title">General Plumbing</div>
                                 <div class="input">
-                                    <input type="radio" class="serviceSelector" value="general_plumbing" id="test4" name="serviceSelector">
-                                    <label for="test4"></label>
+                                    <input type="radio" class="serviceSelector" value="general_plumbing" id="service4" name="serviceSelector">
+                                    <label for="service4"></label>
                                 </div>
                             </div>
                         </div>
@@ -115,8 +115,8 @@
                                 <div><?= renderImg('others.png', 'icons') ?></div>
                                 <div class="title">Other</div>
                                 <div class="input">
-                                    <input type="radio" class="serviceSelector" value="other" id="test5" name="serviceSelector">
-                                    <label for="test5"></label>
+                                    <input type="radio" class="serviceSelector" value="other" id="service5" name="serviceSelector">
+                                    <label for="service5"></label>
                                 </div>
                             </div>
                         </div>
@@ -137,46 +137,31 @@
                 <hr class="d-md-none" />
                 <div class="text-center fs-18 pt-4 pb-5 text-uppercase text-primary font-dmsans fw-700 lh-1 d-md-none">on time or we pay you $100*</div>
                 <div class="text-center fs-20 text-uppercase text-primary font-dmsans fw-700 lh-1 d-none d-md-block">Melbourne wide local and reliable plumbing services</div>
-                <div id="service_title" class="text-center fw-700 text-dark-grey fs-64 lh-1">Issues with your drains?</div>
-                <div class="service_image" id="service_image">
-                    <?= renderImg('service_drains.jpg', 'lib') ?>
-                </div>
 
-                <div class="row gx-xxl-5 gy-4 gy-md-0">
-                    <div class="col-md-4">
-                        <div class="service_card">
-                            <div class="pb-lg-3">
-                                <?= renderImg('service_clock.png', 'icons') ?>
-                                <div class="text-dark fs-32 fw-700 pt-4 pb-2 lh-1">All major blockages</div>
-                            </div>
-                            <div class="font-roboto fs-18 text-tertiary">
-                                Are you struggling with major blockages in your plumbing system? Do you need immediate assistance to fix the issue? Look no further! Our team of expert plumbers in Melbourne is here to help.
-                            </div>
+                <?php foreach ($services as $key => $service) : ?>
+                    <div id="<?= $service['id'] ?>" class="service_tab <?= $key == 0 ? 'active' : '' ?>">
+                        <div class="text-center fw-700 text-dark-grey fs-64 lh-1"><?= $service['title'] ?></div>
+                        <div class="service_video">
+                            <iframe class="video_box" src="<?= $key == 0 ? $service['embed_url'] . '?autoplay=1&mute=1' : $service['embed_url'] ?>" title="<?= $service['title'] ?>" autoplay="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="row gx-xxl-5 gy-4 gy-md-0">
+                            <?php foreach ($service['sub_services'] as $sub_service) : ?>
+                                <div class="col-md-4">
+                                    <div class="service_card">
+                                        <div class="pb-lg-3">
+                                            <?= renderImg('service_clock.png', 'icons') ?>
+                                            <div class="text-dark fs-32 fw-700 pt-4 pb-2 lh-1"><?= $sub_service['title'] ?></div>
+                                        </div>
+                                        <div class="font-roboto fs-18 text-tertiary">
+                                            <?= $sub_service['description'] ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="service_card">
-                            <div class="pb-lg-3">
-                                <?= renderImg('service_clock.png', 'icons') ?>
-                                <div class="text-dark fs-32 fw-700 pt-4 pb-2 lh-1">Same day fix </div>
-                            </div>
-                            <div class="font-roboto fs-18 text-tertiary">
-                                When you need a fast and reliable plumbing service in Melbourne, you can count on us for a same-day fix. Our expert plumbers are available 24/7 to provide immediate assistance and ensure that your plumbing emergencies are resolved quickly and efficiently.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="service_card">
-                            <div class="pb-lg-3">
-                                <?= renderImg('service_clock.png', 'icons') ?>
-                                <div class="text-dark fs-32 fw-700 pt-4 pb-2 lh-1">Effective drain cleaning</div>
-                            </div>
-                            <div class="font-roboto fs-18 text-tertiary">
-                                Are you tired of dealing with clogged and slow-draining sinks and showers? Our expert plumbers in Melbourne offer effective drain cleaning services to help you get rid of stubborn clogs and keep your plumbing system running smoothly.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
 
                 <div class="text-center pt-7 d-none d-md-block">
                     <a href="tel:<?= $phone_number ?>" class="service-call-btn btn btn-primary rounded-0 text-white py-3 px-4 px-xl-5 gap-3 d-inline-flex">
