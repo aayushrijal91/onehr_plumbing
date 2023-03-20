@@ -19,7 +19,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-auto fs-20 font-roboto text-grey d-none d-xl-block">We'll be there in 1 hour or we pay you $100*</div>
+            <div class="col-auto font-roboto text-grey d-none d-xl-block text-center">
+                <div class="fs-20">Division of HomeFirst Services</div>
+                <div class="fs-16">We'll be there on time or we pay you $100*</div>
+            </div>
             <div class="col-auto d-none d-md-block">
                 <a href="tel:<?= $phone_number ?>" class="btn btn-primary rounded-0 text-white py-3 px-4 gap-3">
                     <div>
@@ -388,7 +391,7 @@
                 </div>
             </div>
             <div class="row justify-content-center py-4">
-                <div class="col-xl-10 text-center heading fs-72 fw-700 lh-1 d-none d-md-block">We'll be there in 1 hour or we pay you $100*</div>
+                <div class="col-xl-10 text-center heading fs-72 fw-700 lh-1 d-none d-md-block">We'll be there on time or we pay you $100*</div>
                 <div class="col-xl-10 text-center heading fs-72 fw-700 lh-1 d-md-none">Experience First Class Plumbing Services
                     with PlumbFirst Melbourne</div>
             </div>
@@ -452,12 +455,16 @@
                 </div>
             </div>
             <div class="row justify-content-center justify-content-md-between align-items-center pt-5 pt-xl-4 gy-3 gy-md-0">
-                <div class="col-auto font-roboto text-light-blue copyright">
+                <div class="col-auto font-roboto text-light-blue copyright text-center">
                     <span>Copyright <?= date('Y') ?></span>
-                    <span class="text-secondary px-2 px-xl-5">/</span>
+                    <span class="text-secondary px-2 px-xl-4">/</span>
                     <span><?= $site ?></span>
-                    <span class="text-secondary px-2 px-xl-5">/</span>
+                    <span class="text-secondary px-2 px-xl-4">/</span>
                     <span>All Rights Reserved</span>
+                    <span class="text-secondary px-2 px-xl-4">/</span>
+                    <span>Lic 51787</span>
+                    <span class="text-secondary px-2 px-xl-4">/</span>
+                    <span>Division of HomeFirst Services</span>
                 </div>
                 <div class="col-auto">
                     <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
