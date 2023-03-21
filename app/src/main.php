@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="col-auto font-roboto text-grey d-none d-xl-block text-center">
-                <div class="fs-20">Division of HomeFirst Services</div>
+                <a href="https://homefirstservices.com.au/" target="_blank" class="text-grey text-decoration-none fw-600 fs-20">Division of HomeFirst Services</a>
                 <div class="fs-16">We'll be there on time or we pay you $100*</div>
             </div>
             <div class="col-auto d-none d-md-block">
@@ -43,6 +43,10 @@
                         <div class="">We're Open!</div>
                     </div>
                 </div>
+
+                <div class="text-end pt-4 mobile-call-button">
+                <a href="tel:<?= $phone_number ?>"><?= renderImg('call-button.png', 'icons') ?></a>
+                </div>
             </div>
         </div>
     </div>
@@ -51,7 +55,10 @@
 <div class="banner_wrapper">
     <section class="banner">
         <div class="container">
-            <div class="text-center font-roboto text-quinary fw-300 fs-14 pb-5 d-lg-none">Melbourne wide local and reliable Plumbing Services.</div>
+            <div class="text-center d-xl-none">
+                <a href="https://homefirstservices.com.au/" target="_blank" class="text-decoration-none text-center font-roboto text-quinary fw-600 fs-18 p-0">Division of HomeFirst Services</a>
+                <div class="font-roboto text-quinary fw-300 fs-14 pb-5">Melbourne wide local and reliable Plumbing Services.</div>
+            </div>
             <div class="text-center">
                 <?= renderImg('clock.png', 'icons') ?>
             </div>
@@ -67,13 +74,12 @@
                         <div>with 1 Hour Plumbing</div>
                     </h1>
                 </div>
-                <div class="col-12">
+                <div class="col-12 pt-4 pt-md-0">
                     <div class="select_service_text text-center fs-24 font-roboto">Select your service to get started:</div>
                 </div>
-                <div class="col-12 py-6 d-md-none"><?= renderImg('plumbing-guy.png', 'lib') ?></div>
-                <div class="col-lg-11 col-xl-10 col-xxl-9 py-md-6">
-                    <div class="choices row" id="service_choices">
-                        <div class="col">
+                <div class="col-lg-11 col-xl-10 col-xxl-9 py-4 py-md-6">
+                    <div class="choices row justify-content-center g-3 gx-md-4 gy-md-0">
+                        <div class="col-4 col-md">
                             <div class="choice_card">
                                 <div><?= renderImg('drains.png', 'icons') ?></div>
                                 <div class="title">Drains</div>
@@ -83,7 +89,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-4 col-md">
                             <div class="choice_card">
                                 <div><?= renderImg('hot-water.png', 'icons') ?></div>
                                 <div class="title">Hot Water</div>
@@ -93,7 +99,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-4 col-md">
                             <div class="choice_card">
                                 <div><?= renderImg('gas.png', 'icons') ?></div>
                                 <div class="title">Gas</div>
@@ -103,7 +109,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-4 col-md">
                             <div class="choice_card">
                                 <div><?= renderImg('general-plumbing.png', 'icons') ?></div>
                                 <div class="title">General Plumbing</div>
@@ -113,7 +119,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-4 col-md">
                             <div class="choice_card">
                                 <div><?= renderImg('others.png', 'icons') ?></div>
                                 <div class="title">Other</div>
@@ -190,7 +196,7 @@
                         <h3 class="text-white fs-72 fw-700 lh-1 mb-5 d-none d-lg-block">4500+ loved their 1hr plumbing experience</h3>
                         <div class="cta card rounded-0 border-0 mb-4 mb-md-5 bg-transparent ">
                             <div class="card-body p-0 position-relative">
-                                <span class="tag fw-700 fs-36 lh-1 bg-primary-dark text-white d-inline-block py-1 ms-4 ps-2 pe-3 position-relative"><?= date('Y') ?> Product Review Winner</span>
+                                <span class="tag fw-700 fs-30 lh-1 bg-primary-dark text-white d-inline-block py-1 ms-4 ps-2 pe-3 position-relative">2021, 2022 & 2023 Product Review Winner</span>
                             </div>
                         </div>
                         <h3 class="text-dark fs-72 fw-700 lh-1 text-center d-lg-none">4500+ loved their<br> 1hr plumbing experience</h3>
