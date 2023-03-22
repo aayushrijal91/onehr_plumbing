@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="text-end pt-4 mobile-call-button">
-                <a href="tel:<?= $phone_number ?>"><?= renderImg('call-button.png', 'icons') ?></a>
+                    <a href="tel:<?= $phone_number ?>"><?= renderImg('call-button.png', 'icons') ?></a>
                 </div>
             </div>
         </div>
@@ -401,14 +401,19 @@
                 <div class="col-xl-10 text-center heading fs-72 fw-700 lh-1 d-md-none">Experience First Class Plumbing Services
                     with PlumbFirst Melbourne</div>
             </div>
-            <div class="text-center py-4 d-none d-md-block">
-                <a href="tel:<?= $phone_number ?>" class="btn btn-dark text-white rounded-0 px-4 px-xl-5 gap-3 d-inline-flex">
-                    <div><?= renderImg('phone_btn.png', 'icons', 'h-100') ?></div>
-                    <div>
-                        <div class="fs-24 fw-600"><?= $phone_number ?></div>
-                        <div class="text-start fs-18 font-roboto">Available 24/7</div>
-                    </div>
-                </a>
+            <div class="row justify-content-center py-4">
+                <div class="col-auto d-none d-md-block">
+                    <a href="tel:<?= $phone_number ?>" class="btn btn-dark text-white rounded-0 px-4 gap-3 d-inline-flex">
+                        <div><?= renderImg('phone_btn.png', 'icons', 'h-100') ?></div>
+                        <div>
+                            <div class="fs-24 fw-600"><?= $phone_number ?></div>
+                            <div class="text-start fs-18 font-roboto">Available 24/7</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://plumbfirstmelbourne.com.au/payment/" target="_blank" class="btn btn-primary-dark fw-700 rounded-0 text-white px-4 fs-24 font-roboto px-5">Pay Online</a>
+                </div>
             </div>
         </div>
         <div class="accreditation">
