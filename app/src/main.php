@@ -470,7 +470,7 @@
                     <span class="text-secondary px-2 px-xl-4">/</span>
                     <span>Lic 51787</span>
                     <span class="text-secondary px-2 px-xl-4">/</span>
-                    <span>Division of HomeFirst Services</span>
+                    <span><a href="https://homefirstservices.com.au/" target="_blank" class="text-decoration-none text-white">Division of HomeFirst Services</a></span>
                 </div>
                 <div class="col-auto">
                     <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
